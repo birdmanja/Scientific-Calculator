@@ -8,6 +8,11 @@ pipeline {
     }
 
     stages {
+        stage('Open Directory') {
+            steps {
+                sh 'cd Scientific-Calculator/Calculator'                
+            }
+        }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
