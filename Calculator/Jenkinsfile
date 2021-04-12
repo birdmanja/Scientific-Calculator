@@ -29,7 +29,7 @@ pipeline {
                 // failed, record the test results and archive the jar file.
                 always {
                     junit '**/target/surefire-reports/TEST-*.xml'
-                    publishCoverage adapters: [jacocoAdapter('Calculator/target/site/')], sourceFileResolver: sourceFiles('NEVER_STORE')
+                    publishCoverage adapters: [jacocoAdapter('Calculator/target/')], sourceFileResolver: sourceFiles('NEVER_STORE')
                     // archiveArtifacts 'target/*.jar'
                 }
             }
