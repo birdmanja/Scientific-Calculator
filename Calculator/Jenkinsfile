@@ -32,11 +32,11 @@ pipeline {
                     // archiveArtifacts 'target/*.jar'
                 }
             }
-            // post {
-            //     always {
-            //         junit 'target/surefire-reports/*.xml'
-            //     }
-            // }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
     }
 }
