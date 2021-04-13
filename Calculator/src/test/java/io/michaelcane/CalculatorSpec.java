@@ -215,8 +215,12 @@ public class CalculatorSpec {
         assertEquals("This should evaluate to 1000000000", expectedValue, actualValue, delta);
     }
 
-
-
+    @Test
+    public void test$cube() {
+        double expectedValue = 27;
+        double actualValue = calculator.cube(3);
+        assertEquals("This should evaluate to 27", expectedValue, actualValue, delta);
+    }
 
 
 

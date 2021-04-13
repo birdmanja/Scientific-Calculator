@@ -154,6 +154,13 @@ public class Calculator {
         return Math.pow(10, value1);
     }
 
+    public static double cube(double value1) {
+        /**
+         * This will give the cube of the given value.
+         */
+        return value1 * value1 * value1;
+    }
+
     private void displayError() {
         /**
          * Checks if dividing by Zero
